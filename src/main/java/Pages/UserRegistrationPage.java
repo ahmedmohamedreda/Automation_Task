@@ -10,12 +10,13 @@ public class UserRegistrationPage {
     private final WebDriver driver;
 
 
+
     public UserRegistrationPage(WebDriver driver) {
         this.driver = driver;
     }
-//User Registration Locators
 
-    //credentials to Register
+    //User Registration Locators
+    // Enter registration details
     private By Signup_btn = By.id("nf-field-15");
     private By first_name_field = By.id("nf-field-17");
     private By last_name_field = By.name("lname");
@@ -25,7 +26,7 @@ public class UserRegistrationPage {
     private By linkedin_checkbox = By.id("nf-label-class-field-23-1");
     public By successfulRegisterMessage_txt = By.xpath("//div[@class='nf-response-msg']");
 
-
+    // Submit registration form
     public void UserRegister(String firstName, String lastName, String phone, String email) throws InterruptedException {
         ElementActions.click(driver, first_name_field);
         ElementActions.type(driver, first_name_field, firstName);
@@ -40,6 +41,7 @@ public class UserRegistrationPage {
         ElementActions.click(driver, Signup_btn);
     }
 
+    // Verify successful Message
     public String successfulRegisterMessage() throws InterruptedException {
         Thread.sleep(1000);
         String MessageTxt = ElementActions.getText(driver, successfulRegisterMessage_txt);
