@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
     <properties>
         <!-- Make sure you point to the latest in-house version: https://automatest.jfrog.io/artifactory/SHAFT_ENGINE/io/github/mohabmohie/SHAFT_ENGINE/ -->
-        <shaft_engine.version>5.3.20210822</shaft_engine.version>
+        <shaft_engine.version>6.2.20220408</shaft_engine.version>
     </properties>
     <repositories>
         <repository>
@@ -25,6 +25,17 @@
             <groupId>io.github.mohabmohie</groupId>
             <artifactId>SHAFT_ENGINE</artifactId>
             <version>${shaft_engine.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.mohabmohie</groupId>
+            <artifactId>SHAFT_ENGINE</artifactId>
+            <version>5.3.20210822</version>
         </dependency>
     </dependencies>
     <build>
@@ -52,7 +63,11 @@
                         <artifactId>aspectjweaver</artifactId>
                         <version>1.9.6</version>
                     </dependency>
-
+                    <dependency>
+                        <groupId>com.github.javafaker</groupId>
+                        <artifactId>javafaker</artifactId>
+                        <version>1.0.2</version>
+                    </dependency>
                 </dependencies>
                 <configuration>
                     <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
