@@ -51,4 +51,9 @@ SHAFT is a unified test automation engine. Powered by best-in-class frameworks, 
 6. After successful registration.
 9- verify that the user successful registration.
 ```
+### Code Structure :
+```
+• generates fake data using the JavaFaker library instead of hard-coding values, making the script more flexible and reusable.
+• add some error handling in case the Faker library fails to generate the required data.
+
 ```
