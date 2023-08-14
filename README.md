@@ -23,8 +23,8 @@ SHAFT is a unified test automation engine. Powered by best-in-class frameworks, 
 
 ### Updations and Implementations:
 ```
-• the website that used:(https://codenboxautomationlab.com/) 
-• Create project maven with shaft framwork.
+• the website that is used:(https://codenboxautomationlab.com/) 
+• Create project maven with shaft framework.
 • create the page, tests packages
 • Create pages for locators and actions
 • Create tests for locators and actions
@@ -44,12 +44,12 @@ SHAFT is a unified test automation engine. Powered by best-in-class frameworks, 
 ### Using selenium to automate the following scenario:
 ```
 1. Open codenboxautomationlab website.
-1. Enter First Name which must start with capital letter.
-2. Enter Last Name which must start with capital letter and can’t be equal First Name.
+1. Enter your First Name which must start with a capital letter.
+2. Enter the Last Name which must start with a capital letter and can’t be equal First Name.
 3. Enter a valid Mobile Number.
 4. Enter a valid E-mail that should be unique for every user.
 6. After successful registration.
-9- verify that the user successful registration.
+9- verify that the user has successful registration.
 ```
 ### Code Structure :
 ```
